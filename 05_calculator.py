@@ -42,4 +42,3 @@ elif choice == "7":
     print(Remainder)
 else:
     print("Syntax Error, please try again.")
-
