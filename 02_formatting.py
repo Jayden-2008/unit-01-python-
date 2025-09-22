@@ -57,11 +57,21 @@ TASK 4:
 
 Write a program that takes a person's name and age as input and prints it
 """
+name = str(input("what is your name?"))
+age = int(input("what is your age?"))
 
-
+print(name + " " + str(age))
 """
 TASK 5:
 
 Write a program that takes in two floats, and prints the quotient
 The result should be rounded to the nearest tenth (1 decimal place)
 """
+float_user = input("give me a float")
+float_user2 = input("Give ma another float")
+if float_user2 != 0:
+    answers = float_user/float_user2
+    rounded_answer = round(answers, 1)
+    print("The answer is:", rounded_answer)
+else:
+    print("there is an error")
