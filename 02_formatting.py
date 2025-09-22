@@ -67,8 +67,8 @@ TASK 5:
 Write a program that takes in two floats, and prints the quotient
 The result should be rounded to the nearest tenth (1 decimal place)
 """
-float_user = input("give me a float")
-float_user2 = input("Give ma another float")
+float_user = FloatingPointError("give me a float")
+float_user2 = float("Give ma another float")
 if float_user2 != 0:
     answers = float_user/float_user2
     rounded_answer = round(answers, 1)
