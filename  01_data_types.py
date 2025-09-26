@@ -49,10 +49,24 @@ Write code that takes two numbers as input (an integer and a float),
 performs addition, subtraction, multiplication, and division, and prints the results.
 """
 
+print("------TASK 3------")
+print() 
+print()
+
 int_num = int(input("Enter an integer: "))
 float_num = float(input("Enter a float: "))
+Addition = {int_num} + {float_num} 
+print(Addition)
+Subtraction = int_num - float_num
+print(Subtraction)
+Multiplication = int_num * float_num
+print(Multiplication)
+Division = {int_num} / {float_num}
+print(Division)
 
-
+print()
+print()
+print("------TASK 3------")
 """
 TASK 4:
 
