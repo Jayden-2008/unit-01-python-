@@ -68,6 +68,6 @@ age using the datetime module.
 user_birthdate = input("What is your birthdate in the format (MM/DD/YYYY)?: ")
 my_date = datetime.strptime(user_birthdate, "%m/%d/%Y")
 current_time = datetime.now()
-difference = current_time - my_date
+diff = current_time - my_date
 
-print(difference)
+print(diff)
