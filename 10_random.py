@@ -7,11 +7,12 @@ Print each roll result.
 print("-----Task 1-----")
 print()
 print()
-
+#creating the random module that we will need for all tasks
 import random
-
+# Simulate rolling a six-sided die 10 times
 for i in range(10):
     roll = random.randint(1, 6)
+# Print each roll result
     print(f"Roll {i+1}: {roll}")
 print()
 
@@ -51,8 +52,11 @@ print("-----Task 3-----")
 print()
 print()
 
+# List of colors
 colors = ["red", "blue", "green", "yellow", "purple"]
+# Randomly select 3 colors without replacement
 selected_colors = random.sample(colors, 3)
+# Print the selected colors
 for color in selected_colors:
     print(f"Selected color: {color}")
 
@@ -69,8 +73,11 @@ print("-----Task 4-----")
 print()
 print()
 
+# Create a list of numbers from 1 to 10
 numbers = list(range(1, 11))
+# Shuffle the list
 random.shuffle(numbers)
+# Print the shuffled result
 print("Shuffled numbers:", numbers)
 
 print()
