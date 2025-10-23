@@ -79,5 +79,51 @@ print()
 print()
 
 class BankAccount:
-    
-    def balance(owner):
+    def __init__(self, owner, balance=0):
+        """Initialize a new bank account."""
+        self.owner = owner
+        self.balance = balance
+
+    def deposit(self, amount):
+        """Deposit money into the account."""
+        if amount > 0:
+            self.balance += amount
+            print(f"Deposited ${amount: }. New balance: ${self.balance: }")
+        else:
+            print("Deposit amount must be positive.")
+
+    def withdraw(self, amount):
+        """Withdraw money from the account if funds are available."""
+        if amount <= 0:
+            print("Withdrawal amount must be positive.")
+        elif amount > self.balance:
+            print("Insufficient funds.")
+        else:
+            self.balance -= amount
+            print(f"Withdrew ${amount: }. New balance: ${self.balance: }")
+
+    def __str__(self):
+        """Return a string representation of the account."""
+        return f"BankAccount(owner: {self.owner}, balance: ${self.balance: })"
+
+account1 = BankAccount("Jayden", 1000)
+account2 = BankAccount("Liam", 500)
+
+# Test deposits
+account1.deposit(200)
+account2.deposit(300)
+
+# Test withdrawals
+account1.withdraw(150) 
+# Should show insufficient funds
+account2.withdraw(900) 
+
+# Display final account info
+print()
+print(account1)
+print()
+print(account2)
+
+print()
+print()
+print('-----Task 3-----')
